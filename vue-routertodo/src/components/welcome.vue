@@ -1,13 +1,19 @@
 <template>
-  <div id="app">
-       <img alt="Vue logo" src="./assets/logo.png">
-    <router-view></router-view>
+  <div id="main">
+      <button type="submit" v-on:click="toIndex">开始使用</button>
   </div>
+  
 </template>
 
 <script>
+
 export default {
-  name: "app"
+  methods: {
+    toIndex: function() {
+      return this.$router.push({ path: "/index" });
+    }
+    
+  }
 };
 </script>
 
