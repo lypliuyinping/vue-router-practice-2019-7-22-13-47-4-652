@@ -1,5 +1,6 @@
 <template>
   <div id="main">
+	<h1>Welcome Todo todoList！</h1> 
       <button type="submit" v-on:click="toIndex">开始使用</button>
   </div>
   
